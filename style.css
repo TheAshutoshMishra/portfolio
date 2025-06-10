@@ -344,7 +344,9 @@ body {
   height: 130px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: top; /* 👈 This pushes the crop focus to the top (your face) */
   margin-bottom: 1rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
 
