@@ -5,106 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ashutosh | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-  <!-- Navbar -->
   <header>
     <nav class="navbar">
       <div class="logo">Ashutosh</div>
-      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <div class="menu-icon" id="menu-icon">&#9776;</div>
       <ul class="nav-links" id="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><button class="theme-toggle" id="theme-toggle">🌓</button></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Hero Section -->
   <section id="home" class="hero">
     <div class="hero-content">
-      <img src="profile.jpg" alt="Ashutosh's Photo" class="profile-pic" />
+      <img src="profile.jpg" alt="Profile" class="profile-pic">
       <h1>Hi, I'm <span>Ashutosh</span></h1>
       <p>Aspiring Engineer | Web Developer | Tech Enthusiast</p>
-      <h1><span id="typewriter"></span></h1>
       <a href="#projects" class="btn">View Projects</a>
     </div>
   </section>
 
-  <!-- About Section -->
   <section id="about" class="section">
     <h2>About Me</h2>
-    <p>
-      I'm Ashutosh, a passionate B.Tech student exploring the world of web development and technology.
-      I love learning new skills and building meaningful projects.
-    </p>
-    <a href="https://raw.githubusercontent.com/TheAshutoshMishra/portfolio/main/Ashutosh_Mishra_Resume.pdf" 
-       download class="btn" style="display: inline-block; margin-top: 20px;">
-      ⬇️ Download Resume
-    </a>
+    <p>I'm Ashutosh, a passionate B.Tech student exploring the world of web development. I love learning new skills and building meaningful projects.</p>
+    <a href="Ashutosh_Mishra_Resume.pdf" download class="btn">⬇️ Download Resume</a>
   </section>
 
-  <!-- Skills Section -->
   <section id="skills" class="section">
     <h2>Skills</h2>
     <ul class="skills-list">
       <li>HTML</li>
       <li>CSS</li>
       <li>JavaScript</li>
-      <li>C Programming</li>
       <li>Responsive Design</li>
+      <li>C Programming</li>
     </ul>
   </section>
 
-  <!-- Projects Section -->
   <section id="projects" class="section">
     <h2>Projects</h2>
-
     <div class="project">
-      <h3>To-Do List Web App</h3>
-      <p>
-        A feature-rich task manager with due date picker, dark mode, search filter, export/import,
-        and beautiful UI. Built using HTML, CSS, and JavaScript.
-      </p>
-      <a href="https://theashutoshmishra.github.io/to-do-list/" target="_blank" class="btn">🔗 View Live</a>
+      <h3>To-Do List App</h3>
+      <p>A feature-rich task manager with dark mode, due dates, search, export/import, and more using HTML, CSS, JS.</p>
+      <a href="https://theashutoshmishra.github.io/to-do-list/" class="btn" target="_blank">🔗 View Live</a>
     </div>
-
     <div class="project">
-      <h3>Personal Portfolio</h3>
-      <p>
-        A mobile-responsive personal portfolio website showcasing my skills, projects, and resume.
-        Designed with HTML, CSS, and JS.
-      </p>
-      <a href="https://theashutoshmishra.github.io/" target="_blank" class="btn">🔗 View Portfolio</a>
+      <h3>Portfolio Website</h3>
+      <p>A mobile-responsive personal portfolio website built using HTML, CSS, and JavaScript.</p>
+      <a href="https://theashutoshmishra.github.io/" class="btn" target="_blank">🔗 View Portfolio</a>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section contact-section">
-    <h2>Contact Me</h2>
-    <div class="contact-info">
-      <p><strong>Email:</strong> talktoashutoshmishra@gmail.com</p>
-      <p><strong>Phone:</strong> +91 8090147505</p>
-      <p><strong>Location:</strong> Ghaziabad, India</p>
-
-      <div class="social-icons">
-        <a href="https://github.com/TheAshutoshMishra" target="_blank" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/theashutoshmishra" target="_blank" aria-label="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-    </div>
-
-    <a href="contact.html" class="btn">Go to Contact Form</a>
-  </section>
+  <footer class="footer">
+    <p>&copy; 2025 Ashutosh Mishra</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-
