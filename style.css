@@ -50,7 +50,8 @@ body {
 
 /* Hero Section */
 .hero {
-  background: url('https://images.unsplash.com/photo-1606761561902-08a65bbda61d') no-repeat center/cover;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+              url('https://images.unsplash.com/photo-1606761561902-08a65bbda61d') no-repeat center/cover;
   color: white;
   text-align: center;
   padding: 100px 20px;
@@ -91,6 +92,17 @@ body {
 
 .hero .btn:hover {
   background: #00bcd4;
+}
+
+/* Profile Image */
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #00e5ff;
+  margin: 20px auto;
+  display: block;
 }
 
 /* Section Styling */
@@ -184,13 +196,29 @@ body {
   background: #00bcd4;
 }
 
-/* Profile Image (if you have one) */
-.profile-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #00e5ff;
-  margin: 20px auto;
-  display: block;
+/* Contact Section */
+.contact-section {
+  background: linear-gradient(to bottom right, #e0f7fa, #c5f5ff);
+  border-radius: 12px;
+  padding-bottom: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  font-size: 30px;
+  color: #333;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00bcd4;
+  transform: scale(1.2);
 }
