@@ -142,3 +142,22 @@ body {
   margin-bottom: 20px;
   border-radius: 12px;
   box-shadow: 0 0 
+.project p {
+  margin-bottom: 15px;
+}
+
+.project .btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: #00e5ff;
+  color: #000;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.project .btn:hover {
+  background: #00bcd4;
+}
