@@ -1,14 +1,14 @@
 /* Reset and Theme */
 :root {
-  --bg-color: #ffffff;
-  --text-color: #222222;
-  --accent-color: #007bff;
-  --btn-bg: #007bff;
-  --btn-text: #ffffff;
+  --bg-color: #aca7b8;
+  --text-color: #1518c2;
+  --accent-color: #08284b;
+  --btn-bg: #00070f;
+  --btn-text: #520606a2;
 }
 
 body.dark-mode {
-  --bg-color: #121212;
+  --bg-color: #333488;
   --text-color: #f5f5f5;
   --accent-color: #90caf9;
   --btn-bg: #90caf9;
@@ -30,7 +30,7 @@ body {
   align-items: center;
   padding: 1rem 2rem;
   background: var(--accent-color);
-  color: white;
+  color: rgb(16, 182, 11);
   flex-wrap: wrap;
 }
 
@@ -48,7 +48,7 @@ body {
 
 .nav-links li a {
   text-decoration: none;
-  color: white;
+  color: rgb(143, 108, 10);
   font-weight: bold;
 }
 
@@ -61,15 +61,26 @@ body {
 .theme-toggle {
   background: transparent;
   border: none;
-  font-size: 1.2rem;
+  font-size: 2.2;
   cursor: pointer;
 }
 
 /* Hero Section */
-.hero {
+/* .hero {
   text-align: center;
   padding: 4rem 1rem;
+} */
+ .hero {
+  height: 90vh;
+  background: linear-gradient(to right, #179733, #393e46);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
 }
+
 
 .hero-content .profile-pic {
   width: 160px;
@@ -101,7 +112,7 @@ body {
 .skills-list li {
   padding: 0.5rem 1rem;
   background: var(--accent-color);
-  color: white;
+  color: rgb(255, 255, 255);
   border-radius: 20px;
 }
 
@@ -128,17 +139,34 @@ body {
   cursor: pointer;
 }
 
-.social-icons a {
-  margin: 0 0.5rem;
-  font-size: 1.5rem;
-  color: var(--text-color);
-}
-
 .footer {
   text-align: center;
   padding: 1rem;
   background: var(--accent-color);
   color: white;
+}
+
+/* ✅ Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-icons a {
+  font-size: 2rem;
+  color: var(--text-color);
+  transition: transform 0.3s, color 0.3s;
+}
+
+body.dark-mode .social-icons a {
+  color: #28b92f;
+}
+
+.social-icons a:hover {
+  color: var(--btn-bg);
+  transform: scale(1.2);
 }
 
 /* Responsive */
