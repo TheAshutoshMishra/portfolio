@@ -3,75 +3,476 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ashutosh | Portfolio</title>
+  <title>Ashutosh Mishra | Systems Lead & Developer</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 <body>
+  <!-- Animated Background Particles -->
+  <div id="particles-js"></div>
+  
+  <!-- Navbar -->
   <header>
     <nav class="navbar">
-      <div class="logo">Ashutosh</div>
-      <div class="menu-icon" id="menu-icon">&#9776;</div>
+      <div class="logo" data-aos="fade-right">
+        <span class="logo-bracket">&lt;</span>Ashutosh<span class="logo-bracket">/&gt;</span>
+      </div>
+      <div class="menu-icon" id="menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><button class="theme-toggle" id="theme-toggle">🌓</button></li>
+        <li data-aos="fade-down" data-aos-delay="100"><a href="#home">Home</a></li>
+        <li data-aos="fade-down" data-aos-delay="200"><a href="#about">About</a></li>
+        <li data-aos="fade-down" data-aos-delay="300"><a href="#education">Education</a></li>
+        <li data-aos="fade-down" data-aos-delay="400"><a href="#skills">Skills</a></li>
+        <li data-aos="fade-down" data-aos-delay="500"><a href="#projects">Projects</a></li>
+        <li data-aos="fade-down" data-aos-delay="600"><a href="#gallery">Gallery</a></li>
+        <li data-aos="fade-down" data-aos-delay="700"><a href="#experience">Experience</a></li>
+        <li data-aos="fade-down" data-aos-delay="800"><a href="contact.html">Contact</a></li>
+        <li><button class="theme-toggle" id="theme-toggle"><i class="fas fa-moon"></i></button></li>
       </ul>
     </nav>
   </header>
 
+  <!-- Hero Section with Advanced Animations -->
   <section id="home" class="hero">
     <div class="hero-content">
-      <img src="profile.jpg" alt="Profile" class="profile-pic">
-      <h1>Hi, I'm <span>Ashutosh</span></h1>
-      <p>Aspiring Engineer | Web Developer | Tech Enthusiast</p>
-      <a href="#projects" class="btn">View Projects</a>
+      <div class="profile-container" data-aos="zoom-in" data-aos-duration="1000">
+        <img src="profile.jpg" alt="Ashutosh Mishra" class="profile-pic">
+        <div class="profile-ring"></div>
+      </div>
+      <h1 data-aos="fade-up" data-aos-delay="300">
+        Hi, I'm <span class="gradient-text">Ashutosh Mishra</span>
+      </h1>
+      <div class="typing-container" data-aos="fade-up" data-aos-delay="500">
+        <p class="typing-text">
+          <span id="typed-text"></span><span class="cursor">|</span>
+        </p>
+      </div>
+      <div class="hero-stats" data-aos="fade-up" data-aos-delay="700">
+        <div class="stat-item">
+          <h3 class="counter" data-target="160">0</h3>
+          <p>DSA Problems</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="gpa-display">8.30</h3>
+          <p>YGPA</p>
+        </div>
+        <div class="stat-item">
+          <h3>1300+</h3>
+          <p>Community Members</p>
+        </div>
+      </div>
+      <div class="hero-buttons" data-aos="fade-up" data-aos-delay="900">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-code"></i> View Projects
+        </a>
+        <a href="Ashutosh_Mishra_Resume.pdf" download class="btn btn-secondary">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+      </div>
+      <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="1100">
+        <a href="#about"><i class="fas fa-chevron-down"></i></a>
+      </div>
     </div>
   </section>
 
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>I'm Ashutosh, a passionate B.Tech student exploring the world of web development. I love learning new skills and building meaningful projects.</p>
-    <a href="Ashutosh_Mishra_Resume.pdf" download class="btn">⬇️ Download Resume</a>
-  </section>
-
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>Responsive Design</li>
-      <li>C Programming</li>
-    </ul>
-  </section>
-
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>To-Do List App</h3>
-      <p>A feature-rich task manager with dark mode, due dates, search, export/import, and more using HTML, CSS, JS.</p>
-      <a href="https://theashutoshmishra.github.io/to-do-list/" class="btn" target="_blank">🔗 View Live</a>
+  <!-- About Section -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">About Me</h2>
+      <div class="about-content">
+        <div class="about-text" data-aos="fade-right">
+          <p class="lead">2nd-year CSE student with a passion for problem-solving and system design.</p>
+          <p>I'm a <strong>Systems Lead at ZenYukti</strong>, managing a community of 1,300+ members while architecting technical workflows and contributing to open-source projects.</p>
+          <p>With <strong>160+ DSA problems</strong> solved in C++ and recognition from <strong>IIT Bombay (i-HACK)</strong> and <strong>Smart India Hackathon</strong>, I focus on building scalable solutions and improving developer productivity.</p>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:dev.ashutoshmishra@gmail.com">dev.ashutoshmishra@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <a href="tel:+918090147505">+91 80901 47505</a>
+            </div>
+          </div>
+        </div>
+        <div class="about-image" data-aos="fade-left">
+          <div class="code-window">
+            <div class="window-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="code-content">
+              <code>
+                <span class="comment">// Systems Lead & Developer</span><br>
+                <span class="keyword">const</span> ashutosh = {<br>
+                &nbsp;&nbsp;role: <span class="string">"Systems Lead"</span>,<br>
+                &nbsp;&nbsp;organization: <span class="string">"ZenYukti"</span>,<br>
+                &nbsp;&nbsp;education: <span class="string">"B.Tech CSE"</span>,<br>
+                &nbsp;&nbsp;gpa: <span class="number">8.30</span>,<br>
+                &nbsp;&nbsp;problemsSolved: <span class="number">160</span>+,<br>
+                &nbsp;&nbsp;achievements: [<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"IIT Bombay 2nd Runner Up"</span>,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"SIH Top 10 Finalist"</span><br>
+                &nbsp;&nbsp;],<br>
+                &nbsp;&nbsp;passion: <span class="string">"Building & Leading"</span><br>
+                };
+              </code>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="project">
-      <h3>Portfolio Website</h3>
-      <p>A mobile-responsive personal portfolio website built using HTML, CSS, and JavaScript.</p>
-      <a href="https://theashutoshmishra.github.io/" class="btn" target="_blank">🔗 View Portfolio</a>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section education-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Education</h2>
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Sept 2024 – Present</div>
+            <h3>Bachelor of Technology</h3>
+            <h4>Dr. A.P.J. Abdul Kalam Technical University</h4>
+            <p>Computer Science and Engineering</p>
+            <div class="grade-badge">
+              <i class="fas fa-star"></i> Grade: 8.30 YGPA
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Clean Footer with Working Icons -->
+  <!-- Skills Section -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+          <h3><i class="fas fa-code"></i> Languages</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span>C++</span>
+              <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span>Python</span>
+              <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span>JavaScript</span>
+              <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span>C</span>
+              <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span>HTML/CSS</span>
+              <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+          <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+          <div class="tech-badges">
+            <span class="tech-badge">Git</span>
+            <span class="tech-badge">GitHub</span>
+            <span class="tech-badge">GitLab</span>
+            <span class="tech-badge">VS Code</span>
+            <span class="tech-badge">Vercel</span>
+            <span class="tech-badge">Netlify</span>
+            <span class="tech-badge">Render</span>
+          </div>
+        </div>
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+          <h3><i class="fas fa-brain"></i> Competencies</h3>
+          <div class="tech-badges">
+            <span class="tech-badge">Data Structures & Algorithms</span>
+            <span class="tech-badge">OOP</span>
+            <span class="tech-badge">Program Management</span>
+            <span class="tech-badge">Team Leadership</span>
+            <span class="tech-badge">System Architecture</span>
+            <span class="tech-badge">Open Source</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects & Achievements Section -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Projects & Achievements</h2>
+      <div class="projects-grid">
+        <!-- RepoInsight AI -->
+        <div class="project-card" data-aos="flip-left" data-aos-delay="100">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-trophy"></i></div>
+            <span class="project-badge">2nd Runner Up</span>
+          </div>
+          <div class="project-certificate">
+            <img src="IIT B2.jpeg" alt="IIT Bombay i-HACK Certificate" class="certificate-img">
+          </div>
+          <h3>RepoInsight AI</h3>
+          <h4>i-HACK (IIT Bombay E-Summit)</h4>
+          <p>Secured 3rd position in the national-level GitLab Codeforge Track at IIT Bombay. Built a tool that automates repository evaluation and documentation generation using the Gemini API.</p>
+          <div class="project-tech">
+            <span>Gemini API</span>
+            <span>Python</span>
+            <span>Documentation</span>
+          </div>
+          <div class="project-impact">
+            <i class="fas fa-check-circle"></i> Enhanced developer productivity with automated code insights
+          </div>
+        </div>
+
+        <!-- Smart India Hackathon -->
+        <div class="project-card" data-aos="flip-left" data-aos-delay="200">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-award"></i></div>
+            <span class="project-badge sih-badge">Top 10</span>
+          </div>
+          <div class="project-certificate">
+            <img src="SIH 1.jpeg" alt="Smart India Hackathon Certificate" class="certificate-img">
+          </div>
+          <h3>Smart India Hackathon</h3>
+          <h4>SIH 2025</h4>
+          <p>Shortlisted in the Top 10 teams among 350+ participating teams at College level. Competed in one of India's biggest coding competitions.</p>
+          <div class="project-stats">
+            <div><strong>350+</strong> Teams Competed</div>
+            <div><strong>Top 10</strong> Finalist</div>
+          </div>
+        </div>
+
+        <!-- ZenYukti Platform -->
+        <div class="project-card" data-aos="flip-left" data-aos-delay="300">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-code-branch"></i></div>
+            <span class="project-badge platform-badge">Production</span>
+          </div>
+          <h3>ZenYukti Platform</h3>
+          <h4>React + Vite Community Platform</h4>
+          <p>Led system architecture and GitHub governance for a 1,300+ member community. Managed repository structuring, branch strategy, and release coordination.</p>
+          <div class="project-tech">
+            <span>React</span>
+            <span>Vite</span>
+            <span>Git Workflows</span>
+          </div>
+        </div>
+
+        <!-- Hacktoberfest -->
+        <div class="project-card" data-aos="flip-left" data-aos-delay="400">
+          <div class="project-header">
+            <div class="project-icon"><i class="fab fa-github"></i></div>
+            <span class="project-badge opensource-badge">Open Source</span>
+          </div>
+          <h3>Hacktoberfest 2025</h3>
+          <h4>Open Source Contributions</h4>
+          <p>Contributed 6 pull requests across multiple repositories using Python, C++, HTML, CSS, and JavaScript. Focused on bug fixes and feature enhancements.</p>
+          <div class="project-stats">
+            <div><strong>6</strong> Pull Requests</div>
+            <div><strong>Multiple</strong> Repositories</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Key Metrics -->
+      <div class="metrics-section" data-aos="fade-up">
+        <h3>Key Metrics & Recognition</h3>
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <i class="fas fa-code"></i>
+            <h4>160+</h4>
+            <p>DSA Problems Solved</p>
+            <small>LeetCode, GFG, CodeChef</small>
+          </div>
+          <div class="metric-card">
+            <i class="fas fa-trophy"></i>
+            <h4>IIT Bombay</h4>
+            <p>2nd Runner Up</p>
+            <small>i-HACK GitLab Track</small>
+          </div>
+          <div class="metric-card">
+            <i class="fas fa-users"></i>
+            <h4>1,300+</h4>
+            <p>Community Members</p>
+            <small>ZenYukti Systems Lead</small>
+          </div>
+          <div class="metric-card">
+            <i class="fas fa-star"></i>
+            <h4>8.30</h4>
+            <p>YGPA</p>
+            <small>B.Tech CSE</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section gallery-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Gallery</h2>
+      <p class="gallery-intro" data-aos="fade-up" data-aos-delay="100">
+        Moments & Achievements Captured
+      </p>
+      
+      <div class="gallery-grid">
+        <!-- Profile Picture -->
+        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+          <div class="gallery-image-wrapper">
+            <img src="profile.jpg" alt="Ashutosh Mishra Profile" class="gallery-image">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Ashutosh Mishra</h3>
+                <p>Systems Lead & Developer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- IIT Bombay Certificate 1 -->
+        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+          <div class="gallery-image-wrapper">
+            <img src="iit b.jpeg" alt="IIT Bombay Achievement" class="gallery-image">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>IIT Bombay</h3>
+                <p>i-HACK Participation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- IIT Bombay Certificate 2 -->
+        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+          <div class="gallery-image-wrapper">
+            <img src="IIT B2.jpeg" alt="IIT Bombay 2nd Runner Up" class="gallery-image">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>IIT Bombay i-HACK</h3>
+                <p>2nd Runner Up - GitLab Track</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SIH Certificate -->
+        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+          <div class="gallery-image-wrapper">
+            <img src="SIH 1.jpeg" alt="Smart India Hackathon" class="gallery-image">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Smart India Hackathon</h3>
+                <p>Top 10 Finalist</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Experience</h2>
+      <div class="experience-timeline">
+        <div class="experience-item" data-aos="fade-right">
+          <div class="exp-date">Aug 2025 – Present</div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <h3>Systems Lead</h3>
+              <h4>ZenYukti</h4>
+            </div>
+            <ul class="exp-points">
+              <li>Designed and maintained scalable system workflows for a <strong>1,300+ member community</strong></li>
+              <li>Coordinated cross-functional processes between Technical, Systems, and Design teams</li>
+              <li>Led system architecture and GitHub governance including repository structuring, branch strategy enforcement, and access control</li>
+              <li>Managed release coordination for a <strong>React + Vite</strong>–based platform</li>
+            </ul>
+            <div class="exp-tech">
+              <span>System Architecture</span>
+              <span>GitHub Governance</span>
+              <span>Team Coordination</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-item" data-aos="fade-right">
+          <div class="exp-date">October 2025</div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <h3>Open Source Contributor</h3>
+              <h4>Hacktoberfest 2025</h4>
+            </div>
+            <ul class="exp-points">
+              <li>Contributed <strong>6 pull requests</strong> to open-source projects using Python, C++, HTML, CSS, and JavaScript</li>
+              <li>Focused on bug fixes and feature enhancements across diverse repositories</li>
+              <li>Collaborated with project maintainers following standard contribution workflows</li>
+              <li>Ensured code quality and consistency across all submissions</li>
+            </ul>
+            <div class="exp-tech">
+              <span>Python</span>
+              <span>C++</span>
+              <span>JavaScript</span>
+              <span>Code Review</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer class="footer">
-    <div class="social-icons">
-      <a href="https://github.com/theashutoshmishra" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/theashutoshmishra" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand" data-aos="fade-up">
+          <h3>Ashutosh Mishra</h3>
+          <p>Systems Lead | Developer | Open Source Enthusiast</p>
+        </div>
+        <div class="footer-links" data-aos="fade-up" data-aos-delay="100">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social" data-aos="fade-up" data-aos-delay="200">
+          <h4>Connect With Me</h4>
+          <div class="social-icons">
+            <a href="https://github.com/TheAshutoshMishra" target="_blank" class="social-icon">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/theashutoshmishra" target="_blank" class="social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:dev.ashutoshmishra@gmail.com" class="social-icon">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom" data-aos="fade-up">
+        <p>&copy; 2026 Ashutosh Mishra. All rights reserved.</p>
+        <p>Designed & Built with <i class="fas fa-heart"></i> by Ashutosh</p>
+      </div>
     </div>
-    <p>&copy; 2025 Ashutosh Mishra</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="scriptt.js"></script>
 </body>
 </html>
