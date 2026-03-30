@@ -1,8 +1,4 @@
-// ========================================
-// Advanced Portfolio JavaScript
-// ========================================
 
-// Initialize AOS (Animate On Scroll)
 AOS.init({
   duration: 1000,
   easing: 'ease-out-cubic',
@@ -10,9 +6,6 @@ AOS.init({
   offset: 100
 });
 
-// ========================================
-// Particles.js Configuration
-// ========================================
 particlesJS('particles-js', {
   particles: {
     number: {
